@@ -32,7 +32,7 @@ ID int identity(1,1) NOT NULL,
 FirstName nvarchar(100) NOT NULL,
 LastName nvarchar(100) NOT NULL,
 DateOfBirth date NULL,
-AcademicRank decimal NULL,
+AcademicRank nvarchar(100) NULL,
 HireDate date NULL,
 
 constraint [pk_Teacher] primary key clustered(ID asc)

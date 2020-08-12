@@ -9,9 +9,9 @@ foreign key(StudentID)
 references dbo.Student(Id)
 
 alter table dbo.Grade WITH CHECK
-add constraint fk_Grade_Teacher
+add constraint fk_Grade_TeacherID
 foreign key(TeacherID)
-references dbo.Teacher(Id)
+references dbo.Teacher(ID)
 
 alter table dbo.GradeDetails WITH CHECK
 add constraint fk_GradeDetails_Grade
@@ -22,3 +22,4 @@ alter table dbo.GradeDetails WITH CHECK
 add constraint fk_GradeDetails_AchievementType
 foreign key(AchievementTypeID)
 references dbo.AchievementType(Id)
+
